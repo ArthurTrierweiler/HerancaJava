@@ -4,7 +4,7 @@ public class Mutante extends Humano {
 
 	int perigo;
 
-	public Gerente(String nome, String dna, double radiacao, int perigo) {
+	public Mutante(String nome, String dna, double radiacao, int perigo) {
 		super(nome, dna, radiacao);
 		this.perigo = perigo;
 	}
