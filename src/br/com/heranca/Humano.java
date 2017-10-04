@@ -1,14 +1,32 @@
 package br.com.heranca;
 
-public class Humano {
-
-	protected String nome;
-	protected String dna;
-	protected double radiacao;
-
-	public Humano(String nome, String dna, double salario) {
-		this.nome = nome;
-		this.dna = dna;
-		this.radiacao = radiacao;
+public class HUmano {
+	String nome;
+	String radiacao;
+	boolean poderes;
+	
+	public String GetNome() {
+		return this.nome;
 	}
+	
+	public String GetDna() {
+		return this.dna;
+	}
+	
+	public boolean GetRadiacao() {
+		return poderes;
+	}
+	
+	public String Nome(String name) {
+		return nome = name;
+	}
+	
+	public String DNA(String dnaHumano) {
+		return dna = dnaHumano;
+	}
+	
+	public boolean Radiacao(boolean poderes) {
+		return radiacao = poderes;
+	}
+
 }
