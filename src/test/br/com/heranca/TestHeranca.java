@@ -1,29 +1,42 @@
-package test.br.com.heranca;
+package br.com.teste;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.heranca.Professor;
 
 public class TestaHeranca {
-	Mutante mutante;
+	Professor professor;
 	
 	@Before
 	public void before() {
-		mutante = new Mutante();
+		professor = new Professor();
 	}
 
 	@Test
 	public void testaNome() {
-		mutante.Nome("Hulk");
-		assertEquals(mutante.GetNome(), "Hulk");
+		professor.Nome("Albert");
+		assertEquals(professor.GetNome(), "Albert");
 		}
 	
 	@Test
-	public void testaDna() {
-		policia.Dna("29032001");
-		assertEquals(mutante.GetDna(), "29032001");
+	public void testaCpf() {
+		professor.CPF("122.334.445-66");
+		assertEquals(professor.GetCpf(), "122.334.445-66");
 	}
 	
 	@Test
-	public void testaRadiacao() {
-		mutante.Perigo(true);
-		assertEquals(mutante.GetPerigo(), true);
+	public void testaVerdade() {
+		professor.Verdade(true);
+		assertEquals(professor.GetVerdade(), true);
+	}
+	
+	@Test
+	public void testaResposta() {
+		professor.Verdade(true);
+		assertEquals(professor.GetResposta(), true);
 	}
 	
 }
